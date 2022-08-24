@@ -1,8 +1,8 @@
-.my-text{
+.my-text {
     color: white;
 }
 
-.my-navbar{
+.my-navbar {
     height: 55px;
     background-color: #ffffff11;
     position: sticky;
@@ -15,12 +15,12 @@
     padding: 0 10px 10px 10px;
 }
 
-.my-carousel{
+.my-carousel {
     position: relative;
     top: -55px;
 } 
 
-.my-image{
+.my-image {
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -34,7 +34,12 @@
 }
 
 .my-avatar {
-    border-radius: 50%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(77, 77, 77);
+}
+
+.my-card {
+    background-color: #00000011;
 }
 
 @media only screen and (max-width: 900px) {

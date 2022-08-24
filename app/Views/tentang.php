@@ -9,20 +9,10 @@
 
         <ul class="list-group">
             <li class="list-group-item my-2">
-                <div class="card">
+                <div class="card my-card">
                     <div class="card-body">
-                        <div class="d-flex flex-lg-row flex-column">
-                            <img src="assets/img/<?= $tentang[0]['foto'] ?>" alt="" class="mx-3 my-2 my-avatar">
-                            <div class="d-flex flex-column mx-2 my-auto">
-                                <h3 class="display-6 my-2 mx-auto">
-                                    <strong>
-                                        <?= $tentang[0]['nama'] ?>
-                                    </strong>
-                                </h3>
-                                <p class="fs-5 mx-auto">
-                                    <?= $tentang[0]['tentang'] ?>
-                                </p>
-                            </div>
+                        <div class="d-flex flex-lg-row flex-column justify-content-center">
+                            <img src="assets/img/<?= $tentang[0]['foto'] ?>" alt="" class="mx-3 my-2 img-fluid w-50 my-avatar">
                         </div>
                     </div>
                 </div>
