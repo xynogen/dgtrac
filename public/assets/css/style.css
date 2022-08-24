@@ -1,0 +1,52 @@
+.my-text{
+    color: white;
+}
+
+.my-navbar{
+    height: 55px;
+    background-color: #ffffff11;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.my-navbar-collapse {
+    background-color: #ffffff11;
+    padding: 0 10px 10px 10px;
+}
+
+.my-carousel{
+    position: relative;
+    top: -55px;
+} 
+
+.my-image{
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-caption {
+    padding-bottom: 200px; 
+    text-shadow: 2px 2px 3px black;
+}
+
+.my-avatar {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    .carousel-caption {
+       display: none !important; 
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .my-navbar-collapse {
+       background-color: transparent;
+    }
+}
+
+
