@@ -2,12 +2,13 @@
 
 <body>
     <?= $this->include("navbarHome") ?>
+    <?= $this->include("carousel") ?>
 
-    <div class="container-fluid" style="padding: 0;">
+    <div class="container" style="padding: 0;">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <?= $this->include("carousel") ?>
+                    
                 </div>
 
                 <div class="row mt-3">
@@ -26,20 +27,17 @@
                         </div>
                     </div>
 
-                    <footer class="mt-5 py-5 bg-dark my-footer">
-                        <div class="container">
-                            <div class="col-12">
-                                <p class="m-0 text-center text-white">Copyright© 2022 DG-Trac</p>
-                            </div>
-                        </div>
-                    </footer>
-
+                    
                 </div>
             </div>
-
         </div>
     </div>
-
-
+    <footer class="mt-5 py-5 bg-dark my-footer">
+        <div class="container">
+            <div class="col-12">
+                <p class="m-0 text-center text-white">Copyright© 2022 DG-Trac</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
