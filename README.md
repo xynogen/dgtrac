@@ -1,5 +1,10 @@
 # CodeIgniter 4 Application Starter
 
+## Database Note
+Database_Name       = u949450566_dgtrac
+Database_Username   = u949450566_dgtrac
+Database_Password   = F9A&ml*X5
+
 ## What is CodeIgniter?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
