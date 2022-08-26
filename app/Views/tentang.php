@@ -7,7 +7,6 @@
             <div class="col-lg-12">
                 <div class="text-center my-4">
                     <h1>Tentang Kami</h1>
-
                     <ul class="list-group">
                         <li class="list-group-item my-2">
                             <div class="card my-card">

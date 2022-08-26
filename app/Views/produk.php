@@ -10,7 +10,7 @@
                     <?= $this->include("carousel") ?>
                 </div>
 
-                <div class="row mt-5">
+                <div class="row mt-3">
                     <div class="d-flex flex-row justify-content-around" id="btn-buy">
                         <div class="flex-column">
                             <h3 class="display-6 mx-4 text-center">

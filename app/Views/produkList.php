@@ -37,8 +37,8 @@
                                         </a>
                                         <div>
                                             <a class="text-decoration-none text-dark" href="produk/<?= $dataProduk[$index]['id_banner'] ?>">
-                                                <a href="<?= $dataProduk[$index]['lokasi'] ?>" target="_blank" class="btn btn-warning"><i class="bi bi-geo-alt"></i></a>
-                                                <a href="<?= $dataProduk[$index]['kontak'] ?>" class="btn btn-warning"><i class="bi bi-person-lines-fill"></i></a>
+                                                <a href="<?= $dataProduk[$index]['lokasi'] ?>" target="_blank" class="btn btn-dark"><i class="bi bi-geo-alt"></i></a>
+                                                <a href="<?= $dataProduk[$index]['kontak'] ?>" class="btn btn-dark"><i class="bi bi-person-lines-fill"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -72,8 +72,8 @@
                                     </a>
                                     <div>
                                         <a class="text-decoration-none text-dark" href="produk/<?= $dataProduk[$index]['id_banner'] ?>">
-                                            <a href="<?= $dataProduk[$index]['lokasi'] ?>" target="_blank" class="btn btn-warning"><i class="bi bi-geo-alt"></i></a>
-                                            <a href="<?= $dataProduk[$index]['kontak'] ?>" class="btn btn-warning"><i class="bi bi-person-lines-fill"></i></a>
+                                            <a href="<?= $dataProduk[$index]['lokasi'] ?>" target="_blank" class="btn btn-dark"><i class="bi bi-geo-alt"></i></a>
+                                            <a href="<?= $dataProduk[$index]['kontak'] ?>" class="btn btn-dark"><i class="bi bi-person-lines-fill"></i></a>
                                     </div>
                                 </div>
                             </div>

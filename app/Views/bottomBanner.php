@@ -3,7 +3,7 @@
         <?php 
         shuffle($bottomBanners);
         for ($i = 0; $i < 3; $i++) : ?>
-                <div class="row mx-2">
+                <div class="row mx-2 mb-4">
                     <div class="card h-100">
                         <a class="text-decoration-none text-dark" href="produk/<?= $bottomBanners[$i]['id_banner'] ?>">
                             <!-- Product image-->
