@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Banner;
+use App\Models\Counter;
 
 class Home extends BaseController
 {
@@ -18,6 +19,22 @@ class Home extends BaseController
                             AND type = 'carousel';"
                             );
         $data['banners'] = $banner->getResultArray();
+
+
+
+        $counter = new Counter();
+        $counter->select('counter');
+        $counter->where('id', '1');
+        $count = $counter->find();
+
+        $number = intval($count[0]['counter']) + 1;
+       
+
+        $counter->set('counter', $number);
+        $counter->where('id', '1');
+        $counter->update();
+
+        $data['counter'] = $number;
 
         
         $front_pages = $db->query("SELECT *
