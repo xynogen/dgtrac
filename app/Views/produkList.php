@@ -99,7 +99,7 @@
     </div>
 
     
-    <footer class="mt-5 py-5 bg-dark my-footer">
+    <footer class="mt-5 py-5 bg-dark">
         <div class="container">
             <div class="col-12">
                 <p class="m-0 text-center text-white">Copyright© 2022 DG-Trac</p>
