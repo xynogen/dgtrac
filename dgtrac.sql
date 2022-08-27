@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2022 at 12:03 AM
+-- Generation Time: Aug 27, 2022 at 02:18 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -57,9 +57,9 @@ INSERT INTO `banner` (`id`, `name`, `description`, `id_mitra`, `harga`, `satuan`
 (12, 'Lapis Puan', 'Lapis Puan terbuat dari adonan telur, vanili, susu kental manis, gula pasir yang dihaluskan dan mentega cair yang diletakkan dalam loyang lalu dipanggang selama 3 jam', 11, 320000, 'Loyang', 'show', 'normal'),
 (13, 'Bikang Balek', '-', 4, 25000, '10pcs', 'show', 'normal'),
 (14, 'Lupis', 'Lupis terbuat dari beras ketan yang dibungkus dengan daun pisang dengan bentuk segitiga kemudian di rebus. Memakannya dengan kelapa parut yang telah ditaburi garam halus secukupnya lalu disiram dengan air gula merah yang telah dikentalkan', 4, 150000, '10pcs', 'show', 'normal'),
-(15, 'Engkak Ketan Duren', 'Engkak ketan merupakan kue khas Palembang dan daerah sekitarnya. Kue ini dibuat dari tepung ketan dan santan yang kental sehingga teksturnya lebih kenyal dan rasanya sangat gurih. Biasanya hidangan ini disajikan saat acara-acara besar seperti pernikahan, hari raya, dan acara keluarga.', 1, 20000, 'Loyang', 'show', 'normal'),
+(15, 'Engkak Ketan Duren', 'Engkak ketan merupakan kue khas Palembang dan daerah sekitarnya. Kue ini dibuat dari tepung ketan dan santan yang kental sehingga teksturnya lebih kenyal dan rasanya sangat gurih. Biasanya hidangan ini disajikan saat acara-acara besar seperti pernikahan, hari raya, dan acara keluarga.', 1, 20000, 'Potong', 'show', 'normal'),
 (16, 'Engkak Ketan Ori', 'Engkak ketan merupakan kue khas Palembang. Kue ini dibuat dari tepung ketan dan santan yang kental sehingga teksturnya lebih kenyal dan rasanya sangat gurih. Biasanya hidangan ini disajikan saat acara-acara besar seperti pernikahan, hari raya, dan acara keluarga.', 1, 20000, 'Porsi', 'show', 'normal'),
-(17, 'Lapis Keju', 'Makanan ini mirip dengan lapis legit, namun di setiap tingkatnya terdapat adonan dengan sensasi rasa keju yang cukup kuat. Makanan yang terbuat dari terigu, telur, gula, garam, susu, mentega  dan keju yang dipanggang (oven).', 1, 20000, 'Porsi', 'show', 'normal'),
+(17, 'Lapis Keju', 'Makanan ini mirip dengan lapis legit, namun di setiap tingkatnya terdapat adonan dengan sensasi rasa keju yang cukup kuat. Makanan yang terbuat dari terigu, telur, gula, garam, susu, mentega  dan keju yang dipanggang (oven).', 1, 20000, 'Potong', 'show', 'normal'),
 (18, 'Lapis Prunes', 'Lapis prunes pada dasarnya hampir sama dengan pembuatan lapis legit biasa. Hanya ditambahkan buah prunes setiap tiga lapis.', 1, 20000, 'Porsi', 'show', 'normal'),
 (19, 'Lemper Ayam', 'Lemper jamak ditemui dalam acara perkumpulan, seperti arisan, syukuran, ataupun kudapan saat acara pernikahan. Namun kini untuk menemuukan makanan ini amatlah mudah, dari toko roti hingga pedagang di pasar pun ada, Bahan utama dari Lemper ini ialah beras ketan yang berasal dari buah kelapa, serta ayam cincang atau srundeng sebagai isi dalamnya, dan daun pisang sebagai pembungkusnya. Jika dimakan, rasa gurih dan sedikit asin begitu terasa. Memamng makanan ini amat  cocok untuk menjadi jajanan atau camilan  ringan.\r\n', 8, 3000, 'pcs', 'show', 'normal'),
 (20, 'Jando Berendem', 'Beras ketan di adon dengan air sampai kalis lalu dibentuk bulatan-bulatan kecil warna warni yang berisi unti/ enten-enten (kelapa parut yang telah diaduk dengan gula merah cair). Kemudian dikukus dengan merendam setengah bulatan sampai matang.', 9, 20000, 'Porsi', 'show', 'normal'),
@@ -119,6 +119,24 @@ INSERT INTO `catatan` (`id`, `catatan`, `id_mitra`) VALUES
 (25, 'Pemesanan setiap hari', 14),
 (26, 'Pemesanan dilakukan H-1', 7),
 (27, 'Pemesanan dilakukan H-1', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `counter`
+--
+
+CREATE TABLE `counter` (
+  `id` int(11) NOT NULL,
+  `counter` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `counter`
+--
+
+INSERT INTO `counter` (`id`, `counter`) VALUES
+(1, 1374);
 
 -- --------------------------------------------------------
 
@@ -283,6 +301,12 @@ ALTER TABLE `catatan`
   ADD KEY `mitra` (`id_mitra`);
 
 --
+-- Indexes for table `counter`
+--
+ALTER TABLE `counter`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `foto`
 --
 ALTER TABLE `foto`
@@ -316,6 +340,12 @@ ALTER TABLE `banner`
 --
 ALTER TABLE `catatan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT for table `counter`
+--
+ALTER TABLE `counter`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `foto`
