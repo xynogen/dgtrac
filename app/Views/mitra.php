@@ -115,4 +115,11 @@
         </div>
     </div>
 
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="col-12">
+                <p class="m-0 text-center text-white">Copyright© 2022 DG-Trac</p>
+            </div>
+        </div>
+    </footer>
 </body>
