@@ -12,11 +12,6 @@
             <div class="carousel-item <?= ($i == 0) ? "active" : ""; ?> ">
                 <?php $image_name = "assets/img/" . $banners[$i]["image"]; ?>
                 <img src="<?php echo base_url($image_name); ?>" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="font-size: 20px;">"<?= $banners[$i]["name"] ?>"</h5>
-                    <p style="font-size: 15px;"><?= $banners[$i]["description"] ?></p>
-                </div>
-
             </div>
         <?php endfor ?>
     </div>

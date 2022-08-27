@@ -2,12 +2,13 @@
 
 <body>
     <?= $this->include("navbarHome") ?>
-    <?= $this->include("carouselHome") ?>
+    <?= $this->include("carousel") ?>
 
     <div class="container">
         <div class="row" style="margin-bottom: 15%;">
             <div class="col-md-12 justify-content-center">
-                <div class="row mt-3">
+
+                <div class="row mt-2">
                     <div class="col-md-6">
                         <div class="col-12">
                             <h3 class="display-6 mx-4 text-center">
@@ -28,13 +29,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-2">
+                    <div class="card">
+                        <h5 class="card-header">Deskripsi</h5>
+                        <div class="card-body">
+                            <h5 class="card-title"> <?= $banners[0]["name"] ?></h5>
+                            <p class="card-text"><?= $banners[0]["description"] ?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
                     <div class="card mx-auto" style="width: 18rem; box-shadow: 1px 1px 10px rgb(77, 77, 77);">
                         <img src="/assets/img/<?= $banners[0]['logo'] ?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?= $banners[0]["nama"] ?><i class="bi bi-check-circle-fill text-primary"></i></h5>
                         </div>
-                        <a href="/mitra/<?= $banners[0]['id']?>" class="stretched-link"></a>
+                        <a href="/mitra/<?= $banners[0]['id'] ?>" class="stretched-link"></a>
                     </div>
                 </div>
 
