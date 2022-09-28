@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2022 at 02:18 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Sep 28, 2022 at 01:58 AM
+-- Server version: 10.5.13-MariaDB-cll-lve
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dgtrac`
+-- Database: `u949450566_dgtrac`
 --
 
 -- --------------------------------------------------------
@@ -45,9 +45,9 @@ CREATE TABLE `banner` (
 INSERT INTO `banner` (`id`, `name`, `description`, `id_mitra`, `harga`, `satuan`, `status`, `type`) VALUES
 (1, 'Gulo Puan', 'Konon, di zaman kesultanan, gulo puan merupakan kegemaran para bangsawan Palembang. Diolah dari susu kerbau rawa di pedesaan di kawasan rawa-rawa Sumatera Selatan, makanan pelengkap ini merupakan kekayaan rasa yang hadir dari kekayaan alam Sumatera Selatan. Keberadaannya saat ini terbilang langka. Puan berarti \"susu\" dalam bahasa daerah Sumatera Selatan (Sumsel). Gulo puan bisa diartikan \'gula susu\' sesuai bahan dasarnya, yaitu gula dan susu yang dibuat menjadi sejenis karamel. Teksturnya lembut sedikit berpasir dengan warna coklat. Gulo puan yang rasanya mirip keju manis itu sangat sedap untuk campuran minum kopi atau olesan roti dan pisang goreng. Tak mudah memperolehnya. Penganan yang diolah secara tradisional ini hanya dijual oleh beberapa pedagang kaki lima di waktu tertentu saja, yaitu sekitar waktu shalat Jumat di Masjid Agung Kota Palembang.', 6, 35000, '200gr', 'show', 'carousel'),
 (2, 'Jando Beraes', 'Kue ini sendiri mirip kue keranjang dengan permukaan yang berbintil kasar, tekstur lunak,kenyal dan lembut. Karena permukaan atasnya yang berwarna sangat mencolok seperti merah dan hijau, masyarakat Palembang sering menyebutnya dengan Jando Beraes. Sayang kue tradisional ini sudha mulai jarang terlehat orang yang menjualnya, bahkan sudah banyak orang yang tidak pernah makan dan mengenal kue dengan pengaruh budaya cina ini.', 9, 3000, 'pcs', 'show', 'carousel'),
-(3, 'Gandus', 'Kue Gandus\' adalah salah satu jajanan tradisional khas Indonesia yang berasal dari Sumatera Selatan. Kue ini di perkirakan berumur lebih dari 500 tahun. Konon katanya keberadaan kue ini banyak dipengaruhi oleh budaya Tionghoa, dan Eropa. Dimana pada jamannya dulu kue ini di buat untuk menyambut perayaan hari-hari besar seperti saat Ramadhan dan Lebaran, sehingga Sajian ini cocok untuk menjadi cemilan berbuka puasa. Ciri khas kue ini adalah bertekstur lentur dan lengket yang menggambarkan kekentalan dalam hubungan kekerabatan antar manusia. Rasanya yang gurih dan manis legit menggambarkan perpaduan sejarah kehidupan manusia di muka bumi. Pada jaman dahulu, kue ini tidak memiliki banyak varian seperti saat ini.', 8, 1500, 'pcs', 'show', 'carousel'),
+(3, 'Gandus', 'Kue Gandus\' adalah salah satu jajanan tradisional khas Indonesia yang berasal dari Sumatera Selatan. Kue ini di perkirakan berumur lebih dari 500 tahun. Konon katanya keberadaan kue ini banyak dipengaruhi oleh budaya Tionghoa, dan Eropa. Dimana pada jamannya dulu kue ini di buat untuk menyambut perayaan hari-hari besar seperti saat Ramadhan dan Lebaran, sehingga Sajian ini cocok untuk menjadi cemilan berbuka puasa. Ciri khas kue ini adalah bertekstur lentur dan lengket yang menggambarkan kekentalan dalam hubungan kekerabatan antar manusia. Rasanya yang gurih dan manis legit menggambarkan perpaduan sejarah kehidupan manusia di muka bumi. Pada jaman dahulu, kue ini tidak memiliki banyak varian seperti saat ini.', 8, 2500, 'pcs', 'show', 'carousel'),
 (4, 'Bolu Kojo', 'Bolu kojo merupakan kue berbahan tepung terigu yang dibikin manis. Kue ini biasanya berwarna hijau cerah dari daun pandan. Nama \"kojo\" berarti kemojo atau kamboja. Kue bolu kojo ini diambil karena pada awalnya bentuk kuenya mirip kembang kamboja. Bentuk bunga ini sangat menarik dan ingin mencicipnya. Namun saat ini, bentuk dan ukurannya tak melulu kemojo. Selain di Sumsel, kue khas Melayu ini juga dapat ditemukan di Jambi, Riau, dan Bengkulu. Bolu kojo termasuk penganan ketika acara-acara adat atau juga ketika hari raya.', 5, 120000, 'Loyang', 'show', 'carousel'),
-(5, 'Maksubah', 'kue khas Palembang bercitarasa legit ini merupakan hidangan wajib saat sanjo atau silaturahmi di hari lebaran sejak jaman dahulu. Kue ini hampir mirip dengan kojo, kue tradisional Palembang lainnya, hanya bedanya maksuba mengandung susu kental manis dan warnanya tidak hijau.', 1, 320000, 'loyang', 'show', 'carousel'),
+(5, 'Maksubah', 'Maksubah termasuk ke dalam kue basah dengan rasa manis dan gurih. Memilki ciri khas berwarna kekuningan dan garis-garis kehitaman di tengahnya yang nampak seperti kue lapis. Kue ini terbuat dari adonan telur bebek, gula, susu kental manis dan mentega cair yang dipanggang secara berlapis-lapis.', 1, 320000, 'loyang', 'show', 'carousel'),
 (6, 'Gunjing', 'Kue Gunjing Sumatera Selatan adalah kue basah tradisional jajanan pasar, yang terbuat dari tepung beras dan tepung ketan, kelapa parut, tape ( bisa tape dari ubi kayu atau tape dari beras ketan/beras yang diberi ragi ) yang dimasak dengan cara dipanggang di cetakan khusus yang bernama cetakan gunjing. gunjing atau kue gonjing memiliki dua rasa istimewa ada yang gurih yaitu gunjing putih dan manis yang berwarna merah ( gunjing merah ), dimana gunjing merah dalam adonannya di tambahkan gula merah, kue gunjing sepintas mirip dengan resep kue pukis namun perbedaan nya sangat jelas yaitu pada cetakan dan rasanya, gunjing terasa lebih padat dan bentuknya terlihat tebal dan berisi tapi teksturnya tetap lembut dan empuk.', 12, 2000, 'pcs', 'show', 'front_page'),
 (7, 'Kue Pare', 'Kue Pare khas Palembang merupakan jananan tradisional. Disebut pare karena bentuknya memang menyerupai sayur pare/paria. Memang masih kurang populer dibanding empek empek. Mungkin karena cara bikinnya yang relatif rumit. Di Palembang sendiripun yang lebih populer adalah kue pare versi manis. Kalau yang asin isinya ayam mirip mirip isian lemper, sedangkan versi manisnya isinya enten kelapa.', 10, 3000, 'pcs', 'show', 'front_page'),
 (8, 'Srikaya Bakar', 'Kue berwarna hijau beraroma daun pandan dengan tekstur sangat lembut dan legit. Tentunya, belum banyak yang mengetahui makanan lezat ini, Biasanya orang Palembang, makan kue ini dengan dicocol dengan ketan. Bisa juga dengan roti tawar untuk mengurangi rasa legitnya. Tapi, siapa menduga, ada juga yang langsung melahapnya bulat-bulat.', 13, 6000, 'pcs', 'show', 'front_page'),
@@ -55,9 +55,9 @@ INSERT INTO `banner` (`id`, `name`, `description`, `id_mitra`, `harga`, `satuan`
 (10, 'Bugis', 'Kue Bugis adalah kue yang terbuat dari tepung ketan yang diadonin dengan santan. Setelah itu diisi dengan centi (ampas kelapa yang disiram . dengan air gula), lalu dibungkus dengan daun pisang, dan dikukus. Kue tersebut mirip dengan lambang sari', 2, 30000, 'Porsi', 'show', 'normal'),
 (11, 'Wajik', 'Makanan ini terbuat dari santan kental, daun pandah, gula merah, dan ketan putih. Pada Dasarnya wajik adalah nasi ketan putih yang diolah dengan gula merah sehingga memiliki rasa manis dan berwarna coklat tua. Tekstur dari makanan ini sedikit lengket dan lembut. Rasa dari wajik sendiri, Manis dan Gemuk.', 3, 150000, 'Loyang', 'show', 'normal'),
 (12, 'Lapis Puan', 'Lapis Puan terbuat dari adonan telur, vanili, susu kental manis, gula pasir yang dihaluskan dan mentega cair yang diletakkan dalam loyang lalu dipanggang selama 3 jam', 11, 320000, 'Loyang', 'show', 'normal'),
-(13, 'Bikang Balek', '-', 4, 25000, '10pcs', 'show', 'normal'),
+(13, 'Bikang Balek', 'Bikang Balek ini merupakan olahan yang menggunakan bahan gandum, telur, garam dan penyedap rasa. Dinamakan “balek” dikarenakan proses pembuatannya dibalik yang dalam Bahasa Palembang nya “dibalek”. ', 4, 25000, '10pcs', 'show', 'normal'),
 (14, 'Lupis', 'Lupis terbuat dari beras ketan yang dibungkus dengan daun pisang dengan bentuk segitiga kemudian di rebus. Memakannya dengan kelapa parut yang telah ditaburi garam halus secukupnya lalu disiram dengan air gula merah yang telah dikentalkan', 4, 150000, '10pcs', 'show', 'normal'),
-(15, 'Engkak Ketan Duren', 'Engkak ketan merupakan kue khas Palembang dan daerah sekitarnya. Kue ini dibuat dari tepung ketan dan santan yang kental sehingga teksturnya lebih kenyal dan rasanya sangat gurih. Biasanya hidangan ini disajikan saat acara-acara besar seperti pernikahan, hari raya, dan acara keluarga.', 1, 20000, 'Potong', 'show', 'normal'),
+(15, 'Engkak Ketan Duren', 'Engkak ketan merupakan kue khas Palembang dan daerah sekitarnya. Kue ini dibuat dari tepung ketan dan santan yang kental sehingga teksturnya lebih kenyal dan rasanya sangat gurih. Biasanya hidangan ini disajikan saat acara-acara besar seperti pernikahan, hari raya, dan acara keluarga. Pembeda nya adalah bahan dari engkak ini ditambahkan duren yang berbeda dari engkak ketan biasa', 1, 20000, 'Potong', 'show', 'normal'),
 (16, 'Engkak Ketan Ori', 'Engkak ketan merupakan kue khas Palembang. Kue ini dibuat dari tepung ketan dan santan yang kental sehingga teksturnya lebih kenyal dan rasanya sangat gurih. Biasanya hidangan ini disajikan saat acara-acara besar seperti pernikahan, hari raya, dan acara keluarga.', 1, 20000, 'Porsi', 'show', 'normal'),
 (17, 'Lapis Keju', 'Makanan ini mirip dengan lapis legit, namun di setiap tingkatnya terdapat adonan dengan sensasi rasa keju yang cukup kuat. Makanan yang terbuat dari terigu, telur, gula, garam, susu, mentega  dan keju yang dipanggang (oven).', 1, 20000, 'Potong', 'show', 'normal'),
 (18, 'Lapis Prunes', 'Lapis prunes pada dasarnya hampir sama dengan pembuatan lapis legit biasa. Hanya ditambahkan buah prunes setiap tiga lapis.', 1, 20000, 'Porsi', 'show', 'normal'),
@@ -65,9 +65,9 @@ INSERT INTO `banner` (`id`, `name`, `description`, `id_mitra`, `harga`, `satuan`
 (20, 'Jando Berendem', 'Beras ketan di adon dengan air sampai kalis lalu dibentuk bulatan-bulatan kecil warna warni yang berisi unti/ enten-enten (kelapa parut yang telah diaduk dengan gula merah cair). Kemudian dikukus dengan merendam setengah bulatan sampai matang.', 9, 20000, 'Porsi', 'show', 'normal'),
 (21, 'Putu Ayu', 'Putu Ayu tergolong jajanan pasar yang terbuat dari bahan-bahan tepung terigu, gula pasir, santan, telur ayam, kelapa muda, dan pewarna makanan dengan proses memasaknya yang dikukus.', 5, 1500, 'pcs', 'show', 'normal'),
 (22, 'Shanghai', 'Di Sumatra Selatan, Palembang, terdapat jajanan pasar yang bernama martabak Shanghai (Kue Shanghai). Adonannya mirip bakwan, tetapi adonannya dicetak. Cetakan martabak Shanghai berbahan aluminium. Berbentuk bulat memanjang (oval). Di sekeliling cetakan bergerigi dan cetakan diberi pegangan berupa gagang yang cukup panjang agar tidak panas ketika proses penggorengan. Di Palembang, martabak Shanghai disajikan dengan kuah cuka.', 6, 2000, 'pcs', 'show', 'normal'),
-(23, 'Cake Marmer', 'Cake marmer merupakan kue dengan tampilan goresan atau belang-belang seperti marmer yang dihasilkan dari memadukan adonan terang dan gelap dengan tipis. Bolu marmer bisa memiliki berbagai variasi rasa seperti cokelat, vanila, pandan, kopi, dan lain-lainnya.', 14, 35, 'Loyang', 'show', 'normal'),
+(23, 'Cake Marmer', 'Cake marmer merupakan kue dengan tampilan goresan atau belang-belang seperti marmer yang dihasilkan dari memadukan adonan terang dan gelap dengan tipis. Bolu marmer bisa memiliki berbagai variasi rasa seperti cokelat, vanila, pandan, kopi, dan lain-lainnya.', 14, 35000, 'Loyang', 'show', 'normal'),
 (24, 'Lapis Kojo', 'Kue berwarna hijau bertekstur lembut ini menawarkan sensasi berbeda jika dibandingkan kue basah lain, Ciri khasnya terletak pada adanya bau wangi yang berasal dari daun pandan dan daun suji.', 14, 160000, 'Loyang', 'show', 'normal'),
-(25, 'Maksubah Kojo', '-', 11, 320000, 'Loyang', 'show', 'normal'),
+(25, 'Maksubah Kojo', 'Maksuba terbuat dari telur bebek, gula, susu kental manis dan mentega yang dipanggang secara berlapis-lapis. Lapisan atasnya (bisa disajikan di atas/ dibawah) adalah kue kojo yang terbuat dari telur bebek, gula, terigu, susu kental manis, santan, mentega dan air pandan dan suji, kemudian dipanggang secara berlapis-lapis', 11, 320000, 'Loyang', 'show', 'normal'),
 (26, 'Maksubah', 'kue khas Palembang bercitarasa legit ini merupakan hidangan wajib saat sanjo atau silaturahmi di hari lebaran sejak jaman dahulu. Kue ini hampir mirip dengan kojo, kue tradisional Palembang lainnya, hanya bedanya maksuba mengandung susu kental manis dan warnanya tidak hijau.', 11, 320000, 'Loyang', 'show', 'normal'),
 (27, 'Blunder', 'Kue bluder ini berbentuk bulat yang terbuat dari bahan-bahan seperti tepung gandum, susu, santan, gula dan umak roti (ragi),Kue ini merupakan serapan dari bolu atau kue dari negara Belanda yang sejenis dengan kue muffin.\r\n\r\n', 12, 2000, 'pcs', 'show', 'normal'),
 (28, 'Kue Kamer', 'Kue ini berbentuk bundar, pipih berwarna coklat dan hampir menyerupai kue apem atau serabi tetapi sedikit lebih besar dan bantet. Kue ini terbuat dari adonan terigu, mentega, dan telur.', 12, 3000, 'pcs', 'show', 'normal'),
@@ -75,8 +75,8 @@ INSERT INTO `banner` (`id`, `name`, `description`, `id_mitra`, `harga`, `satuan`
 (30, 'Engkak Mini', 'Sepintas kue ini mirip dengan kue lapis legit. Warnanya cokelat berlapis kuning cantik. Tapi siapa sangka kalau bahan dasar kue ini ternyata berbeda dengan kue lapis biasa. Seperti apa sih kuenya Wong Kito ini?', 10, 3000, 'pcs', 'show', 'normal'),
 (31, 'Manan Sahmin', 'Manan sahmin adalah salah satu kue bolu khas Palembang yang berbahan dasar ubi selo (ubi jalar) kuning dan berstuktur lembut serta diberi kismis di tengahnya. Aroma harumnya berasal dari campuran susu dan air perasan daun pandan. Manan sahmin merupakan \'kembaran kue kojo\' yang juga memiliki versi loyang berukuran besar dan versi mini.', 10, 3000, 'pcs', 'show', 'normal'),
 (32, 'Gelenak', 'Gelenak merupakan penganan yang berasal dari kota Palembang. Kue yang satu ini mirip seperti wajik atau dodol khas Jawa Barat, berbentuk pipih, bulat dan berwarna coklat kehitaman.', 7, 1500, 'pcs', 'show', 'normal'),
-(33, 'Ketan Glondo', '-', 7, 1500, 'pcs', 'show', 'normal'),
-(34, 'Ketan Kuning Sambelengkung', '-', 7, 1500, 'pcs', 'show', 'normal'),
+(33, 'Ketan Glondo', 'Ketan yang direbus bersama santan yang telah diberi garam sedikit lalu di kukus. Setelah santan meresap ke dalam ketan, lalu ketan di kukus sampai matang. Kemudian ketan dibentuk bulat dan diatasnya diberi glondo yang terbuat dari santan kental yang telah dimasak lama sampai keluar minyak', 7, 1500, 'pcs', 'show', 'normal'),
+(34, 'Ketan Kuning Sambelengkung', 'Makanan ini terdiri dari nasi ketan kuning yang diberi topping sambal lingkung. Ketan yang direbus bersama santan yang telah diberi garam sedikit dan kunyit halus lalu di kukus. Setelah santan meresap ke dalam ketan, lalu ketan di kukus sampai matang Sambal Lingkung merupakan makanan Khas Palembang, dimana bentuknya kering seperti abon. Bahan Utama terbuat dari dua ikan yang melimpah di Palembang yakni tenggiri dan gabus. ', 7, 1500, 'pcs', 'show', 'normal'),
 (35, 'Putu Ayu Gula Merah', 'putu ayu gula merah pada dasarnya bahan-bahannya pun sama dengan putu ayu biasa hanya saja di tambah dengan gula merah didalamnya.', 3, 60000, 'Loyang', 'show', 'normal');
 
 -- --------------------------------------------------------
@@ -129,14 +129,14 @@ INSERT INTO `catatan` (`id`, `catatan`, `id_mitra`) VALUES
 CREATE TABLE `counter` (
   `id` int(11) NOT NULL,
   `counter` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `counter`
 --
 
 INSERT INTO `counter` (`id`, `counter`) VALUES
-(1, 1374);
+(1, 2429);
 
 -- --------------------------------------------------------
 
@@ -280,7 +280,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nama`, `username`, `password`, `foto`, `tentang`) VALUES
-(1, 'Dhea Radika Putri', 'admin', 'admin', 'dhea.png', 'Mahasiswa Politeknik Negeri Sriwijaya Jurusan Administrasi Bisnis Program Studi D4 Usaha Perjalanan Wisata');
+(1, 'Dhea Radika Putri', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'dhea.png', 'Mahasiswa Politeknik Negeri Sriwijaya Jurusan Administrasi Bisnis Program Studi D4 Usaha Perjalanan Wisata');
 
 --
 -- Indexes for dumped tables
@@ -345,7 +345,7 @@ ALTER TABLE `catatan`
 -- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `foto`

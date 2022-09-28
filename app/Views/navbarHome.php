@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg my-navbar ">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img id="my-logo" src="<?php echo base_url('assets/icon/icon-white.png'); ?>" width="90" height="20" />
+      <img id="my-logo" src="<?php echo base_url('assets/icon/icon-white.png'); ?>" width="100" />
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <i class="bi bi-list my-text"></i>
